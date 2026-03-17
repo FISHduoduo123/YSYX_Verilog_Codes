@@ -1,4 +1,4 @@
-# YXYX_Verilog
+# Verilog Homeworks
 此仓库将用来放置Verilog作业代码。
 在线习题网站：  
 [VerilogHDL](https://hdlbits.01xz.net/wiki/Main_Page)
