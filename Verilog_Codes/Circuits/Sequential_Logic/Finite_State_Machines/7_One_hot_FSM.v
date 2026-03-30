@@ -1,21 +1,20 @@
-
-/*module top_module(
+module top_module(
     input in,
     input [9:0] state,
     output reg [9:0] next_state,
     output out1,
     output out2
 );
-	parameter 	s0=10'b00000_00000,
-    			s1=10'b00000_00001,
-    			s2=10'b00000_00001,
-    			s3=10'b00000_00010,
-    			s4=10'b00000_00100,
-    			s5=10'b00000_01000,
-    			s6=10'b00000_10000,
-    			s7=10'b00001_00000,
-    			s8=10'b00010_00000,
-    			s9=10'b00100_00000;
+	parameter 	s0=10'b00000_00001,
+    			s1=10'b00000_00010,
+    			s2=10'b00000_00100,
+    			s3=10'b00000_01000,
+    			s4=10'b00000_10000,
+    			s5=10'b00001_00000,
+    			s6=10'b00010_00000,
+    			s7=10'b00100_00000,
+    			s8=10'b01000_00000,
+    			s9=10'b10000_00000;
     always @(*) 
         case (state)
     		s0:next_state=in?s1:s0;
@@ -32,7 +31,8 @@
     	endcase
     assign out1 = (state==s8)||(state==s9);
     assign out2 = (state==s7)||(state==s9);
-endmodule*/
+endmodule
+
 module top_module(
     input in,
     input [9:0] state,
